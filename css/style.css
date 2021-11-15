@@ -142,8 +142,38 @@ main{
   height: 73vh;
   background-color: blueviolet;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
+.chat-user, .chat-client{
+  width: 45%;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  
+}
+
+.chat-user{
+  background-color: #D6FABA;
+}
+
+.chat-client{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+.chat-user{
+  display: flex;
+  flex-direction: column;
+}
+.date-send{
+  align-self: flex-end;
+  font-size: 12px;
+  color: gray;
+}
 
 .chat-send{
   background-color: #EAE9EB;
@@ -154,6 +184,9 @@ main{
   align-items: center;
 }
 .chat-send input{
-width: 90%;
-height: 4vh;
+  width: 90%;
+  height: 4vh;
+  border: 1px solid white;
+  padding-left: 10px;
 }
+
