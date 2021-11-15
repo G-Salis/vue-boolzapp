@@ -10,10 +10,11 @@
     <link rel="shortcut icon" href="https://static.whatsapp.net/rsrc.php/v3/yP/r/rYZqPCBaG70.png">
   </head>
   <body>
-    <div class="container">
+    <div id="app" class="container">
       <div class="body-top"></div>
       <div class="body-bottom"></div>
       <div class="chat-container">
+
         <nav>
           
           <div class="user-nav">
@@ -62,6 +63,50 @@
           <div class="user-search">
             <input type="text" placeholder="Cerca o inizia una nuova chat">
           </div>
+          
+          <div class="client">
+
+            <div class="client-box" 
+            v-for="(contact, index) in contacts">
+
+              <div class="client-box-left">
+
+                <div class="client-img">
+                  <img :src="contact.img" alt="">
+                </div>
+                <div>
+  
+                  <div>{{contact.name}}</div>
+                  <div>{{contact.messages[contact.messages.length - 1].text.slice(0, 25)}}...</div>
+  
+                </div>
+                  
+  
+              </div>
+  
+              <div class="client-box-right">
+  
+                <div class="date">{{contact.messages[contact.messages.length - 1].data}}</div>
+
+            </div>
+
+          </div>
+            <!-- <div class="contact-user">
+              <div class="contact-box" 
+              v-for="(contact, index) in contacts">
+                <div class="left-contact-box">
+                  <img :src="contact.img" alt="">
+                  <div class="contact-box-text">
+                    <h3>{{contact.name}}</h3>
+                    <p>{{contact.messages[contact.messages.length - 1].text.slice(0, 15)}}...</p>
+                  </div>
+                </div>
+                <div class="right-contact-box">
+                  <p>{{contact.messages[contact.messages.length - 1].data}}</p>
+                </div>
+              </div>
+            </div> -->
+          </div>
 
             
 
@@ -87,8 +132,8 @@
 
             <div class="client-main-right">
 
-              <i class="fas fa-circle-notch"></i>
-              <i class="fas fa-comment-alt"></i>
+              <i class="fas fa-search"></i>
+              <i class="fas fa-paperclip"></i>
               <i class="fas fa-ellipsis-v"></i>
 
 
@@ -134,6 +179,7 @@
     </div>
   
 
-  
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
