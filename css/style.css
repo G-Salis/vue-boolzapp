@@ -44,35 +44,59 @@ nav{
   height: 90vh;
 }
 
-.user-nav, .client-main{
+.user-nav, .client-main, .chat-send{
   background-color: #EAE9EB;
   height: 10vh;
   padding: 10px;
 }
 
-.user-nav, .client-main, .user-nav-left{
+
+.user-nav, .client-main, .user-nav-left, .client-main-left, .notif-nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.client-main{
-  border-left: 1px solid gray;
-}
 
 .notif-nav{
   background-color: lightblue;
   height: 10vh;
+  padding: 10px;
 }
 
-.user-img{
+.user-img, .client-img, .notif-img{
   width: 50px;
   height: 50px;
+  background-color: white;
+  border-radius: 50%;
 }
 
-.user-img img{
+.user-img img, .client-img img{
   width: 100%;
   border-radius: 50%;
+}
+
+.notif-img i{
+padding-left: 10px;
+padding-top: 13px;
+font-size: 25px;
+color: lightblue;
+}
+
+.notif-txt{
+  font-size: 15px;
+  margin-left: 10px;
+  color: grey;
+  cursor: pointer;
+}
+
+.notif-txt div:first-child{
+  font-weight: 500;
+  color: black;
+}
+
+.notif-txt div:last-child{
+text-decoration: underline;
 }
 
 .user-nav span{
@@ -80,15 +104,56 @@ nav{
   margin-left: 5px;
 }
 
-.user-nav-right i{
+.user-nav-right i, .client-main-right i{
   font-size: 20px;
   margin-right: 10px;
   color: grey;
+  cursor: pointer;
+}
+
+.user-search{
+  margin: 0px 10px;
+  padding: 5px;
+}
+
+.user-search input{
+  width: 100%;
+  margin: 0 auto;
+  line-height: 20px;
+  border: 1px solid white;
+  padding-left: 20px;
 }
 
 
 main{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: blue;
   width: 55vw;
   height: 90vh;
+}
+
+.client-main{
+  border-left: 1px solid gray;
+}
+
+.chat{
+  height: 73vh;
+  background-color: blueviolet;
+  padding: 10px;
+}
+
+
+.chat-send{
+  background-color: #EAE9EB;
+  height: 7vh;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chat-send input{
+width: 90%;
+height: 4vh;
 }
