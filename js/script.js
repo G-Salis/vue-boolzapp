@@ -18,7 +18,7 @@ const app = new Vue({
           },
           {
             data: "10/01/2020 15:50:00",
-            text: "Ricordati di dargli da mangiare",
+            text: "Ah Scusa!",
             stato: "inviato"
           },
           {
@@ -36,12 +36,12 @@ const app = new Vue({
         [
           {
             data: "10/01/2020 17:30:35",
-            text: "Oggi puoi uscire? Andiamo al cinema?",
+            text: "Lollatina??",
             stato: "inviato"
           },
           {
             data: "10/01/2020 17:39:22",
-            text: "Mi piacerebbe ma devo andare dal dottore!",
+            text: "Mi piacerebbe ma devo andare in palestra!",
             stato: "ricevuto"
           },
         ] 
@@ -54,12 +54,12 @@ const app = new Vue({
         [
           {
             data: "10/01/2020 11:30:55",
-            text: "Ciao Samuele, l'ultima volta hai dimenticato da me gli occhiali",
+            text: "Ti sei dimenticato i soldi da me",
             stato: "inviato"
           },
           {
             data: "10/01/2020 12:01:22",
-            text: "Oh scusa! Mi sono proprio dimenticato, vengo oggi pomeriggio a prenderli, grazie!",
+            text: "Ah scusa! Potresti portarmeli oggi?",
             stato: "ricevuto"
           },
         ] 
@@ -77,7 +77,7 @@ const app = new Vue({
           },
           {
             data: "10/01/2020 22:15:09",
-            text: "Mi piacerebbe ma devo andare dal dottore!",
+            text: "Si, ma preferirei andare al cinema!",
             stato: "ricevuto"
           },
         ] 
