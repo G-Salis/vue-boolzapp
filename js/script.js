@@ -12,17 +12,17 @@ const app = new Vue({
         messages: 
         [
           {
-            data: "10/01/2020 15:30:55",
+            data: "01/01/1970 00:00:00",
             text: "Hai portato a spasso il cane?",
             stato: "inviato"
           },
           {
-            data: "10/01/2020 15:50:00",
+            data: "01/01/1970 00:00:00",
             text: "Ah Scusa!",
             stato: "inviato"
           },
           {
-            data: "10/01/2020 16:15:22",
+            data: "01/01/1970 00:00:00",
             text: "Tutto fatto!",
             stato: "ricevuto"
           },
@@ -35,12 +35,12 @@ const app = new Vue({
         messages: 
         [
           {
-            data: "10/01/2020 17:30:35",
+            data: "01/01/1970 00:00:00",
             text: "Lollatina??",
             stato: "inviato"
           },
           {
-            data: "10/01/2020 17:39:22",
+            data: "01/01/1970 00:00:00",
             text: "Mi piacerebbe ma devo andare in palestra!",
             stato: "ricevuto"
           },
@@ -53,12 +53,12 @@ const app = new Vue({
         messages: 
         [
           {
-            data: "10/01/2020 11:30:55",
+            data: "01/01/1970 00:00:00",
             text: "Ti sei dimenticato i soldi da me",
             stato: "inviato"
           },
           {
-            data: "10/01/2020 12:01:22",
+            data: "01/01/1970 00:00:00",
             text: "Ah scusa! Potresti portarmeli oggi?",
             stato: "ricevuto"
           },
@@ -71,12 +71,12 @@ const app = new Vue({
         messages: 
         [
           {
-            data: "10/01/2020 21:56:55",
+            data: "01/01/1970 00:00:00",
             text: "Oggi puoi uscire? Andiamo al cinema?",
             stato: "inviato"
           },
           {
-            data: "10/01/2020 22:15:09",
+            data: "01/01/1970 00:00:00",
             text: "Si, ma preferirei andare al cinema!",
             stato: "ricevuto"
           },
