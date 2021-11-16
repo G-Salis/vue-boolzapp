@@ -163,9 +163,10 @@ main{
 .chat{
   height: 73vh;
   background-image: url(../img/mine.jpg);
-  padding: 10px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
+  overflow: auto;
 }
 
 .chat-user, .chat-client{
@@ -176,18 +177,18 @@ main{
   
 }
 
-.chat-user{
-  background-color: #D6FABA;
-}
-
 .chat-client{
   background-color: white;
+}
+
+.chat-user{
+  background-color: #D6FABA;
   display: flex;
   flex-direction: column;
   align-self: flex-end;
 }
 
-.chat-user{
+.chat-client{
   display: flex;
   flex-direction: column;
 }

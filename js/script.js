@@ -14,7 +14,7 @@ const app = new Vue({
           {
             data: "01/01/1970 00:00:00",
             text: "Hai portato a spasso il cane?",
-            stato: "inviato"
+            stato: "ricevuto"
           },
           {
             data: "01/01/1970 00:00:00",
