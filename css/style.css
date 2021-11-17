@@ -136,6 +136,15 @@ text-decoration: underline;
   padding: 8px;
   border-bottom: 1px solid lightgray;
 }
+.client-box:hover, .client-box:active{
+  background-color: lightgrey;
+  cursor: pointer;
+}
+
+.client-box-selected{
+  background-color: lightgrey;
+  cursor: pointer;
+}
 
 .client-box-left div:first-child{
   font-size: 15px;

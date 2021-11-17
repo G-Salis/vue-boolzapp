@@ -65,7 +65,8 @@
 
             <div class="client-box" 
             v-for="(contact, index) in contacts"
-            @click="counter = index">
+            @click="counter = index"
+            :class="{'client-box-selected' : counter === index}">
 
               <div class="client-box-left">
 
@@ -108,7 +109,7 @@
 
                 <div>{{contacts[counter].name}}</div>
                 <div class="date">Ultimo accesso oggi alle 
-                  {{contacts[counter].messages.data}}</div>
+                  {{contacts[counter].messages[contacts[counter].messages.length - 1].data}}</div>
 
               </div>
                 
@@ -130,7 +131,9 @@
 
             <div 
             v-for="(message, index) in contacts[counter].messages"
-            :class="[message.stato === 'inviato' ? 'chat-client' : 'chat-user']">
+            :class="message.stato">
+
+            <!-- :class="[message.stato === 'inviato' ? 'chat-client' : 'chat-user']"> -->
 
               <div >
                 {{message.text}}
@@ -146,10 +149,15 @@
           <div class="chat-send">
 
             <i class="far fa-smile"></i>
-            <input type="text" placeholder="Scrivi un messaggio">
+            <input 
+              type="text" 
+              placeholder="Scrivi un messaggio"
+              v-model="toSend"
+              @keyup.13="msgSend">
+
             <i class="fas fa-microphone"></i>
             </div>
-
+            
           </div>
 
         </main>
