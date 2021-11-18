@@ -58,15 +58,23 @@
           </div>
 
           <div class="user-search">
-            <input type="text" placeholder="Cerca o inizia una nuova chat">
+            <span class="search-icon">
+              <i class="fas fa-search"></i>
+            </span>
+            <input 
+            type="text" 
+            v-model="searchClient"
+            placeholder="Cerca o inizia una nuova chat">
           </div>
+
           
           <div class="client">
 
             <div class="client-box" 
             v-for="(contact, index) in contacts"
             @click="counter = index"
-            :class="{'client-box-selected' : counter === index}">
+            v-show='searchClient === "" || contact.name.toUpperCase().includes(searchClient.toUpperCase())'
+            :class="{'client-box-selected': counter === index}">
 
               <div class="client-box-left">
 

@@ -102,12 +102,17 @@ const app = new Vue({
     ],
 
     counter: 0,
+    //variabile in cui all'inteno viene scritto il messaggio da inviare
     toSend: '',
-    clock: null
+    clock: null,
+    //variabile in cui all'inteno viene scritto il nome da cercare
+    searchClient: ""
 
   },
 
   methods: {
+
+    //Funzione che utilizzo per inviare il messaggio
     msgSend() {
 
        if (this.toSend.trim() !== '') {
@@ -123,7 +128,7 @@ const app = new Vue({
     
           this.contacts[this.counter].messages.push(msgStr);
           this.msgAuto()
- 
+          //serve a ripulire l'input-text
           this.toSend = '';
        } else {
           console.log('error');
@@ -132,14 +137,14 @@ const app = new Vue({
        
        
     },
-
+    //funzione che utilizzo per inviare il mesaggio di risposta dopo n secondi
     msgAuto(){
       this.clock = setTimeout(()=>{
         this.msgRecived();
       },1000)
     },
 
-
+    //Funzione che effettua la risposta in automatico
     msgRecived() {
 
       let time = '';
@@ -153,13 +158,12 @@ const app = new Vue({
 
       this.contacts[this.counter].messages.push(msgStr);
 
-      this.toSend = '';
-
    },
 
+   //Funzione per aggiornare l'ora in cui è stato mandato il messaggio
     getDate(d) {
        d = new Date();
-
+      //Utilizzo per mostrare sempre due cifre
        let doubleDigitSec = d.getSeconds().toLocaleString('en-US', {
         minimumIntegerDigits: 2,
       })

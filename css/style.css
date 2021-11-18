@@ -69,6 +69,7 @@ nav{
   height: 50px;
   background-color: white;
   border-radius: 50%;
+  margin-right: 10px;
 }
 
 .user-img img, .client-img img{
@@ -117,7 +118,7 @@ text-decoration: underline;
 }
 
 .user-search input{
-  width: 100%;
+  width: 94%;
   height: 5vh;
   margin: 0 auto;
   line-height: 20px;
@@ -148,7 +149,8 @@ text-decoration: underline;
 
 .client-box-left div:first-child{
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 700; 
+  margin-right: 10px;
 }
 
 .client-box-left div:last-child{
